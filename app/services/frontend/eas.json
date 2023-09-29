@@ -1,0 +1,28 @@
+{
+    "build": {
+        "production": {
+            "android": {
+                "buildType": "apk"
+            },
+            "channel": "production",
+            "env": {
+                "EXPO_PUBLIC_API": "https://api.brunobelucci.com/v1/"
+            }
+        },
+        "preview2": {
+            "android": {
+                "gradleCommand": ":app:assembleRelease"
+            },
+            "env": {
+                "EXPO_PUBLIC_API": "https://api.brunobelucci.com/v1/"
+            }
+        },
+        "preview3": {
+            "developmentClient": true,
+            "env": {
+                "EXPO_PUBLIC_API": "https://api.brunobelucci.com/v1/"
+            }
+        },
+        "production": {}
+    }
+}
